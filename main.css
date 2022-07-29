@@ -1,0 +1,145 @@
+/*common*/
+body {
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+img {
+	width:450px;
+	height:450px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color:coral;
+	font-weight: bold;
+}
+
+button {
+	border: none;
+	border-radius: 10px;
+	background-color: azure;
+	font-size: 14px;
+	margin: 2px;
+}
+
+button:hover{
+	font-weight: bold;
+	background-color:mistyrose;
+
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 4vh;
+	flex-wrap: wrap;
+}
+
+
+/*header*/
+header {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	height: 7vh;
+	align-items: flex-end;
+	border-bottom: 1px solid rgb(192, 192, 192);
+
+}
+
+header ul.list li{
+	float: left;
+	font-size: 18px;
+	margin: 10px;
+}
+
+header ul.list li.page{
+	color: coral;
+	font-weight: bold;
+}
+
+/*section - about me*/
+section.about_me{
+	/* background-color: antiquewhite; */
+	display: flex;
+	flex-direction: column;
+}
+
+section.about_me .me{
+	padding: 10px;
+}
+
+section.about_me .me h2{
+	font-size: 28px;
+	line-height: 1.1em;
+}
+
+
+section.about_me .me h1{
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 15px;
+	line-height: 1.3em;
+}
+
+section.about_me .me ul.info{
+	font-size: 16px;
+	margin:10px;
+	line-height: 1.5em;
+}
+
+section.about_me .me p{
+	font-size: 18px;
+	margin: 5px;
+	line-height: 1.3em;
+}
+
+section.about_me .me p::after{
+	content: "";
+	display: block;
+	margin: 20px 0;
+	border-bottom: 1px solid rgb(192, 192, 192);
+
+}
+
+section.about_me .tech{
+	margin: 0 20px;
+}
+
+section.about_me .tech h3{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+section.about_me .tech h3 button{
+	font-weight:lighter;
+	background-color: rgba( 255, 255, 255, 0.5 );
+	font-size: 14px;
+}
+
+section.about_me .tech .main_tech{
+	margin: 10px;
+}
+
+section.about_me .tech .sub_tech{
+	margin: 10px;
+}
+
+/*section - detail*/
+section.detail{
+	display: flex;
+	flex-direction: column;
+	background-color: antiquewhite;
+}
+
+section.detail .wrap_detail{
+	border-radius: 10px;
+	border:1px solid rgb(192, 192, 192);
+}
