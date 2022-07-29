@@ -4,10 +4,47 @@ body {
 }
 
 img {
-	width:450px;
-	height:450px;
+	width: 450px;
+	height: 450px;
 	border-radius: 50%;
-	margin-bottom: 10px;
+	display: block;
+	margin: auto;
+}
+
+@media (max-width: 800px) {
+	img {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media (min-width: 1190px) {
+	img {
+		width: 250px;
+		height: 250px;
+	}
+
+	section.about_me {
+		max-width: 25vw;
+	}
+
+	section.detail {
+		max-width: 75vw;
+	}
+}
+
+@media (min-width: 1300px) {
+	img {
+		width: 450px;
+		height: 450px;
+	}
+	section.about_me {
+		max-width: 30vw;
+	}
+
+	section.detail {
+		max-width: 70vw;
+	}
 }
 
 a {
@@ -15,8 +52,8 @@ a {
 	color: black;
 }
 
-a:hover{
-	color:coral;
+a:hover {
+	color: coral;
 	font-weight: bold;
 }
 
@@ -28,9 +65,9 @@ button {
 	margin: 2px;
 }
 
-button:hover{
+button:hover {
 	font-weight: bold;
-	background-color:mistyrose;
+	background-color: mistyrose;
 
 }
 
@@ -38,7 +75,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-top: 4vh;
+	margin-top: 2vh;
 	flex-wrap: wrap;
 }
 
@@ -54,54 +91,57 @@ header {
 
 }
 
-header ul.list li{
+header ul.list li {
 	float: left;
 	font-size: 18px;
 	margin: 10px;
 }
 
-header ul.list li.page{
+header ul.list li.page {
 	color: coral;
 	font-weight: bold;
 }
 
 /*section - about me*/
-section.about_me{
-	/* background-color: antiquewhite; */
+section.about_me {
+	/* background-color: greenyellow; */
 	display: flex;
 	flex-direction: column;
+	min-width: 250px;
 }
 
-section.about_me .me{
+section.about_me .me {
 	padding: 10px;
+
 }
 
-section.about_me .me h2{
+section.about_me .me h2 {
+	margin-top: 20px;
 	font-size: 28px;
 	line-height: 1.1em;
 }
 
 
-section.about_me .me h1{
+section.about_me .me h1 {
 	font-weight: bold;
 	font-size: 32px;
 	margin-bottom: 15px;
 	line-height: 1.3em;
 }
 
-section.about_me .me ul.info{
+section.about_me .me ul.info {
 	font-size: 16px;
-	margin:10px;
+	margin: 10px;
 	line-height: 1.5em;
 }
 
-section.about_me .me p{
+section.about_me .me p {
 	font-size: 18px;
 	margin: 5px;
 	line-height: 1.3em;
 }
 
-section.about_me .me p::after{
+section.about_me .me p::after {
 	content: "";
 	display: block;
 	margin: 20px 0;
@@ -109,37 +149,37 @@ section.about_me .me p::after{
 
 }
 
-section.about_me .tech{
+section.about_me .tech {
 	margin: 0 20px;
 }
 
-section.about_me .tech h3{
+section.about_me .tech h3 {
 	font-size: 16px;
 	font-weight: bold;
 }
 
-section.about_me .tech h3 button{
-	font-weight:lighter;
-	background-color: rgba( 255, 255, 255, 0.5 );
+section.about_me .tech h3 button {
+	font-weight: lighter;
+	background-color: rgba(255, 255, 255, 0.5);
 	font-size: 14px;
 }
 
-section.about_me .tech .main_tech{
+section.about_me .tech .main_tech {
 	margin: 10px;
 }
 
-section.about_me .tech .sub_tech{
+section.about_me .tech .sub_tech {
 	margin: 10px;
 }
 
 /*section - detail*/
-section.detail{
+section.detail {
 	display: flex;
 	flex-direction: column;
 	background-color: antiquewhite;
 }
 
-section.detail .wrap_detail{
+section.detail .wrap_detail {
 	border-radius: 10px;
-	border:1px solid rgb(192, 192, 192);
+	border: 1px solid rgb(192, 192, 192);
 }
