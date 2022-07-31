@@ -1,47 +1,49 @@
 /*common*/
 body {
 	font-family: 'Nanum Gothic', sans-serif;
-	font-size: 100%;
+	font-size: calc(0.75em + 1vw);
 	overflow-x: hidden;
+	width: 100%;
 }
 
 main {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	margin:2em;
+	margin: 1em 0;
 	flex-wrap: wrap;
 }
 
 img {
-	width: 25em;
-	height: 25em;
+	width: 100%;
+  height: auto;
 	border-radius: 50%;
 	margin: auto;
 	display: block;
 }
 
 /*모바일*/
-@media (max-width: 800px){
-	body {
-		font-size: 70%;
-	}
+/* @media (max-width: 800px){
 
-	img {
-		min-width: 25em;
-		min-height: 25em;
-	}
-
-	section.about_me .texts{
-		min-width: 15em;
-	}
-
-	section.detail{
-		min-width: 15em;
-	}
-}
+} */
 
 @media (min-width: 1200px){
+	body{
+		font-size: 1.5em;
+	}
+
+	main {
+		margin: 1em auto;
+		max-width: 55em;
+	}
+	section.about_me {
+		font-size: 80%;
+		flex-basis: 30%;
+	}
+
+	section.detail {
+		flex-basis: 60%;
+		flex-grow: 1;
+	}
 
 }
 
@@ -84,9 +86,8 @@ header {
 }
 
 header ul.list{
-	display: inherit;
 	font-size: 18px;
-	margin-left:-1em;
+	margin-left:2em;
 }
 
 header ul.list li {
@@ -95,12 +96,7 @@ header ul.list li {
 }
 
 header ul.list li:nth-child(1){
-	width: 4em;
 	text-align: right;
-}
-
-header ul.list li:nth-child(2){
-	margin-left:0.5em;
 }
 
 header ul.list li:nth-child(3){
@@ -117,18 +113,13 @@ header ul.list li.page {
 section.about_me {
 	display: flex;
 	flex-direction: column;
-	min-width: 20em;
-	margin:0px 2em 1em 2em;
+	max-width: 35em;
+	margin: auto;
+	padding:0 1.5em;
 }
-
-section.about_me .texts{
-	padding: 0 4em;
-	max-width: 25em;
-}
-
 
 section.about_me .texts h2 {
-	margin-top: 20px;
+	margin-top: 2vh;
 	font-size: 1.4em;
 	line-height: 1.1em;
 }
@@ -137,12 +128,12 @@ section.about_me .texts h2 {
 section.about_me .texts h1 {
 	font-weight: bold;
 	font-size: 1.5em;
-	margin-bottom: 15px;
+	margin-bottom: 1.5vh;
 	line-height: 1.3em;
 }
 
 section.about_me .texts ul.info {
-	font-size: 0.9em;
+	font-size: 0.8em;
 	line-height: 1.5em;
 	background-color: rgba(255, 252, 205, 0.801);
 	border-radius: 1em;
@@ -150,7 +141,7 @@ section.about_me .texts ul.info {
 }
 
 section.about_me .texts p {
-	font-size: 1em;
+	font-size: 0.95em;
 	line-height: 1.3em;
 }
 
@@ -200,61 +191,56 @@ section.about_me .tech .sub_tech {
 
 /*section - detail*/
 section.detail {
-	/* background-color: antiquewhite; */
 	display: flex;
 	flex-direction: column;
-	/* min-width: 60em; */
-	margin:0px 2em 1em 2em;
-	overflow-y: scroll;
-	height: 900px;
-	min-width:25em;
-	max-width: 50em;
-	align-items: center;
+	max-width: 36em;
+	margin: 0 auto;
+	padding: 0 1em;
+	/* overflow-y: scroll;
+	height: 900px; */
 }
 
-section.detail::-webkit-scrollbar{
+/* section.detail::-webkit-scrollbar{
 	display:none;
-}
+} */
 
 section.detail .wrap_detail {
-	border-radius: 10px;
+	border-radius: 1em;
 	border: 1px solid rgb(192, 192, 192);
 }
 
 section.detail .wrap_detail h2{
-	font-size:1.1em;
+	font-size:0.8em;
 	font-weight:bold;
-	padding: 1em;
+	padding: 1.2em;
 }
 
 section.detail .wrap_detail .wrap_content{
 	display: flex;
 	flex-direction: row;
 	padding: 0 0.1em 1em 1em;
-	min-width: 10em;
-	/* background-color: azure; */
 }
 
 section.detail .wrap_detail .wrap_content h4{
-	font-size: 0.8em;
+	font-size: 0.5em;
 	margin-right: 0.8em;
 	padding-top: 0.1em;
-	min-width: 10em;
+	min-width:10em;
 }
 
 section.detail .wrap_detail .wrap_content .content h3{
-	font-size: 1.2em;
+	font-size: 0.8em;
 	font-weight: bold;
 }
 
 section.detail .wrap_detail .wrap_content .content p{
-	font-size: 1em;
+	font-size: 0.6em;
 	padding-top: 0.8em;
 }
 
 section.detail .wrap_detail .wrap_content .content ul{
 	padding-top: 0.4em;
-	font-size: 0.8em;
+	font-size: 0.6em;
 	list-style-type: '\1F388';
 	margin-left: 1.5em;
 	margin-right: 1em;
@@ -262,5 +248,4 @@ section.detail .wrap_detail .wrap_content .content ul{
 
 section.detail .wrap_detail .wrap_content .content li{
 	margin-bottom: 1em;
-
 }
