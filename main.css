@@ -22,9 +22,11 @@ img {
 }
 
 /*모바일*/
-/* @media (max-width: 800px){
-
-} */
+@media (max-width: 800px){
+	img {
+		padding: 1.5em 0;
+	}
+}
 
 @media (min-width: 1200px){
 	body{
