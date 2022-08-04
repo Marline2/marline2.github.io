@@ -43,7 +43,6 @@ button {
 }
 
 button:hover {
-	font-weight: bold;
 	color: white;
 	background-color:	rgb(71, 100, 155);
 	/* background-color:  mistyrose; */
@@ -59,9 +58,10 @@ header {
 	height: 7vh;
 	align-items:flex-end;
 	border-bottom: 1px solid rgb(192, 192, 192);
-	background-color: rgb(255, 238, 230);
+	background-color: rgb(255, 255, 255);
 	top:0;
 	left: 0;
+	box-shadow: 0 0 0.5em 0 rgb(179, 178, 178);
 }
 
 header ul.list{
@@ -186,6 +186,7 @@ section.detail {
 section.detail .wrap_detail {
 	border-radius: 1em;
 	border: 1px solid rgb(192, 192, 192);
+	margin-bottom: 2em;
 }
 
 section.detail .wrap_detail h2{
@@ -207,6 +208,12 @@ section.detail .wrap_detail .wrap_content h4{
 	min-width:10em;
 }
 
+section.detail .wrap_detail .line{
+	width: 32em;
+	margin: auto auto 2em auto;
+	border-bottom: 1px solid rgb(209, 209, 209);
+}
+
 section.detail .wrap_detail .wrap_content .content h3{
 	font-size: 0.8em;
 	font-weight: bold;
@@ -215,6 +222,7 @@ section.detail .wrap_detail .wrap_content .content h3{
 section.detail .wrap_detail .wrap_content .content p{
 	font-size: 0.6em;
 	padding-top: 0.8em;
+	margin-bottom: 0.3em;
 }
 
 section.detail .wrap_detail .wrap_content .content ul{
@@ -229,6 +237,33 @@ section.detail .wrap_detail .wrap_content .content li{
 	margin-bottom: 1em;
 }
 
+section.detail .wrap_detail .wrap_content .content .btn{
+	margin-top:0.4em;
+	font-size: 0.8em;
+}
+
+section.detail .wrap_detail .wrap_content .content .btn button:hover{
+	background-color: azure;
+	color: black;
+}
+
+section.detail .wrap_detail .wrap_content .content ul.project li{
+	padding-top: 0.4em;
+	list-style-type:circle;
+	font-size: 1em;
+	margin-left: 1.5em;
+	margin-right: 1em;
+}
+
+section.detail .wrap_detail .wrap_content .content li.page{
+	font-size: 0.7em;
+}
+
+section.detail .wrap_detail .wrap_content .content a{
+	font-size: 0.7em;
+}
+
+
 /*모바일*/
 @media (max-width: 600px){
 	section.about_me {
@@ -240,12 +275,17 @@ section.detail .wrap_detail .wrap_content .content li{
 		height: 15em;
 		border-radius: 50%;
 	}
+
+	section.detail .wrap_detail .line{
+		width: 25em;
+	}
 }
 
 @media (min-width: 1200px){
 	header {	
 		background-color: white;
 		position:unset;
+		box-shadow: none;
 	}
 
 	body{
