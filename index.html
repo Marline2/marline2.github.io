@@ -66,7 +66,8 @@
 						<button>Python</button>
 						<button>Amazon S3</button>
 						<button>TypeScript</button>
-						<button>HTML/CSS/JS</button>
+						<button>HTML/CSS</button>
+						<button>Javascript</button>
 						<button>JQuery</button>
 						<button>Bs4</button>
 						<button>Android Studio</button>
@@ -134,9 +135,9 @@
 			<div class="wrap_detail">
 				<h2>개인 프로젝트</h2>
 				<div class="wrap_content">
-					<h4>2022. 08<br />&nbsp;2022. 진행 중..</h4>
+					<h4>2022. 08~ <br />&nbsp;2022. 진행 중..</h4>
 					<div class="content">
-						<h3>TIL - 로그인을 기반으로 하는 웹 애플리케이션</h3>
+						<h3>TIL - 로그인 기반 웹 애플리케이션</h3>
 						<div class="btn">
 							<button>ReactJS</button>
 							<button>Styled-component</button>
@@ -146,7 +147,7 @@
 						<p>TIL을 저장하고 보이는 화면에 로그인 기능을 넣어 사용자에 따른 목록을 보여주는 웹
 						<ul class="project">
 							<li>
-								Firebase Authentication과 Store, Storage를 적극 활용
+								Firebase Store, Storage를 적극 활용
 							</li>
 							<li>
 								-
@@ -159,38 +160,139 @@
 							</li>
 						</ul>
 						<i class='fa fa-github'></i>
-						<a href="https://github.com/Marline2" target="_blank">
-						https://github.com/Marline2</a>
+						<a href="https://github.com/Marline2/til" target="_blank">
+							https://github.com/Marline2/til</a>
+						</p>
+					</div>
+				</div>
+				<div class="line"></div>
+				<div class="wrap_content">
+					<h4>2021. 06~ <br />&nbsp;2021. 08</h4>
+					<div class="content">
+						<h3>미끄메라 Q&A - OX퀴즈 모바일 전용 웹</h3>
+						<div class="btn">
+							<button>ReactJS</button>
+							<button>Styled-component</button>
+							<button>React Route</button>
+							<button>Redux</button>
+							<button>Firebase</button>
+						</div>
+						<p>미끄메라에 대한 10가지 문답을 실행하고
+							최종 점수와 사용자의 소감을 저장해서 전체 순위와 함께 정보를 보여주는 모바일 전용
+							웹
+						<ul class="project">
+							<li>
+								App.js를 클래스 형 컴포넌트로 작성함으로 Connect 함수를 사용하여 State 관리를 했습니다.
+								React Route로 상황에 따라 보이길 원하는 컴포넌트를 지정했습니다. 
+								퀴즈를 시작하기 전에 입력한 사용자의 이름을 Redux에 저장합니다. 
+							</li>
+							<li>
+								OX 퀴즈의 문답을 Redux로 설정하고 
+								Quiz 페이지에 사용자가 진입했을 때, 
+								useSelector로 설정한 문답을 가져와 질문이 하나씩 보이게 했습니다.
+								React Hook의 Momo와 Ref를 사용해서 O나 X쪽으로 미끄메라 사진을 스와이프 했을 때의 x, y값 위치에 따라 
+								사용자의 답을 Boolean 값으로 useDispatch를 통해 Redux에 저장합니다.
+							</li>
+							<li>
+								퀴즈 진행률을 화면에 표시했습니다. 
+								퀴즈가 끝나면 사용자의 점수를 계산합니다. 
+								Redux에서 점수 별로 보일 메세지도 가져와서 계산된 점수에 맞게 보여주며,
+								미끄메라에게 메세지(후기)를 남길 수 있습니다.	
+							</li>
+							<li>
+								useRef로 사용자가 입력한 이름과 메세지, 점수를 Firebase Store에 저장하고,
+								전체 랭킹에서 볼 수 있게 했습니다. 데이터가 저장되고 불러올 만들 동안 로딩 스피너가 
+								뜨도록 Redux에서 설정했습니다. 
+							</li>
+						</ul>
+						<i class='fa fa-github'></i>
+						<a href="https://github.com/Marline2/pkmnQA" target="_blank">
+							https://github.com/Marline2/pkmnQA</a>
 						</p>
 					</div>
 				</div>
 			</div>
-			<div class="content">
-				<h4>2021. 01 .04 ~ 2021. 02. 07</h4>
-				<div class="text">
-					<h3>리액트 심화반 63기</h3>
-					<p>우하우하우하핫</p>
-				</div>
-			</div>
-			</div>
-			<div class="wrap_detail">
-				<h2>개인 프로젝트</h2>
-			</div>
 			<div class="wrap_detail">
 				<h2>팀 프로젝트</h2>
-				<div class="content">
-					<h4>2021. 10 ~ 2021. 12</h4>
-					<div class="text">
-						<h3>안드로이드 애플리케이션 "맘스잇"</h3>
-						<p>우하우하우하핫</p>
+				<div class="wrap_content">
+					<h4>2021. 10~ <br />&nbsp;2021. 12</h4>
+					<div class="content">
+						<h3>맘스잇(Mom's Eat) - 임산부들을 위한 앱</h3>
+						<div class="btn">
+							<button>Android Studio</button>
+							<button>Java</button>
+						</div>
+						<p>임산부들이 먹을 수 있거나, 먹을 수 없는 음식을 검색하면 바로 알려주는 안드로이드 앱</p>
+						<ul class="project">
+							<li>
+								앱을 실행하자마자 바로 검색 바가 보이게 하여, 빠르게 원하는 정보를 확인할 수 있는
+								음식 검색 기능과 음식 종류별 메뉴를 만들어 원하는 종류의 음식들을 모아서 확인 가능하게
+								만들었습니다.
+							</li>
+							<li>
+								당시 존재하는 임산부 음식 관련 앱들의 공통점으로는 한국어를 지원하지 않는다는 점이
+								있었습니다. 그래서 앞으로 한국 시장에서의 임산부 음식 관련 소프트웨어의 선두가 될
+								수 있다는 점으로 프로젝트를 시작했습니다.
+							</li>
+							<li>
+								Java언어로 안드로이드 스튜디오를 사용했습니다.
+								메인 화면에 ListView를 넣은 후, ListView에서 보여질 화면을 만들고 
+								음식 정보를 담기 위한 FoodData.java를 생성했습니다. 그리고 사용자가 정의한
+								데이터를 보여주기 위한 MyAdapter.java를 생성하여 MainActivity.java에서 
+								ListView와 연결했습니다.
+							</li>
+							<li>
+								SearchView.setOnCloseListener을 사용해서 검색 바를 사용하지 않았을 때의 기본 값을 설정하고
+								이 곳의 입력을 프로그램이 주시하게 만들었습니다. 
+								그리고 자연스러운 화면 이동을 위해서 Transition을 사용했습니다.
+							</li>
+							<li>
+								구글 플레이 콘솔에 앱을 등록하고 출시하는 과정을 경험했습니다.
+							</li>
+						</ul>
+						<p>팀장(&개발 및 디자인)을 맡음. +정보 수집 2명</p>
+						<i class='fa fa-github'></i>
+						<a href="https://github.com/Marline2/momsEat" target="_blank">
+							https://github.com/Marline2/momsEat</a>	
 					</div>
 				</div>
 			</div>
 			<div class="wrap_detail">
 				<h2>보유 자격</h2>
+				<div class="wrap_content">
+					<h4>2022. 06. 17</h4>
+					<div class="content">
+						<h3>정보처리기사</h3>
+						<p>최종 합격</p>
+					</div>
+				</div>
 			</div>
 			<div class="wrap_detail">
 				<h2>학력</h2>
+				<div class="row_direction">
+					<div class="wrap_content">
+						<h4>2019. 03~ <br />&nbsp;2023. 02 </h4>
+						<div class="content">
+							<h3>동서울대학교</h3>
+							<p>정보통신과 ICT융합전공</p>
+							<h5>타 직종 재직 중, 평소 좋아하는 컴퓨터를 깊게 다뤄보고 싶다고 생각하여
+								소프트웨어 및 하드웨어를 종합적으로 배울 수 있는
+								정보통신과 진학을 결정했습니다.	
+							</h5>
+						</div>
+					</div>
+					<div class="wrap_content">
+						<h4>2014. 03~ <br />&nbsp;2017. 02</h4>
+						<div class="content">
+							<h3>서울관광고등학교</h3>
+							<p>외식조리과</p>
+							<h5>요리사가 목표였으나, 해외 취업에 관심이 생겨
+								영어 회화를 목표로 싱가포르 국제 공항 면세점에서 
+								Sales Team Member로 1년간 일을 했습니다. 
+							</h5>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</section>

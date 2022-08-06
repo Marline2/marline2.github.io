@@ -92,7 +92,7 @@ header ul.list li.page {
 section.about_me {
 	display: flex;
 	flex-direction: column;
-	max-width: 35em;
+	max-width: 34em;
 	margin: auto;
 	padding:0 1.5em;
 }
@@ -176,7 +176,7 @@ section.detail {
 	margin: 0 auto;
 	padding: 0 1em;
 	/* overflow-y: scroll;
-	height: 900px; */
+	height: 900px;*/
 }
 
 /* section.detail::-webkit-scrollbar{
@@ -195,15 +195,28 @@ section.detail .wrap_detail h2{
 	padding: 1.2em;
 }
 
+section.detail .wrap_detail .row_direction{
+	display: flex;
+	flex-direction: row;
+}
+
+section.detail .wrap_detail .row_direction .wrap_content{
+	flex-basis: 50%;
+}
+
 section.detail .wrap_detail .wrap_content{
 	display: flex;
 	flex-direction: row;
-	padding: 0 0.1em 1em 1em;
+	padding: 0 1em 1em 1em;
+}
+
+section.detail .wrap_detail .row_direction .wrap_content h5{
+	font-size: 0.6em;
+	color:gray;
 }
 
 section.detail .wrap_detail .wrap_content h4{
 	font-size: 0.5em;
-	margin-right: 0.8em;
 	padding-top: 0.1em;
 	min-width:10em;
 }
@@ -230,7 +243,6 @@ section.detail .wrap_detail .wrap_content .content ul{
 	font-size: 0.6em;
 	list-style-type: '\1F388';
 	margin-left: 1.5em;
-	margin-right: 1em;
 }
 
 section.detail .wrap_detail .wrap_content .content li{
@@ -252,7 +264,6 @@ section.detail .wrap_detail .wrap_content .content ul.project li{
 	list-style-type:circle;
 	font-size: 1em;
 	margin-left: 1.5em;
-	margin-right: 1em;
 }
 
 section.detail .wrap_detail .wrap_content .content li.page{
@@ -277,21 +288,34 @@ section.detail .wrap_detail .wrap_content .content a{
 	}
 
 	section.detail .wrap_detail .line{
-		width: 25em;
+		width: 20em;
+	}
+	
+	section.detail .wrap_detail .row_direction{
+		flex-wrap: wrap;
+	}
+
+	section.detail .wrap_detail .row_direction .wrap_content{
+		flex-basis:auto;
 	}
 }
 
 @media (min-width: 1200px){
 	header {	
-		background-color: white;
-		position:unset;
-		box-shadow: none;
+		box-shadow: 0 0 0.1em 0 rgb(211, 211, 211);
+		/* position:unset; */
 	}
 
 	body{
+		margin-top: 10vh;
+		margin-bottom: 10vh;
 		font-size: 1.5em;
 	}
 
+	section.detail .wrap_detail .line{
+		width: 30em;
+	}
+	
 	main {
 		margin: 1em auto;
 		max-width: 55em;
@@ -300,11 +324,24 @@ section.detail .wrap_detail .wrap_content .content a{
 	section.about_me {
 		font-size: 80%;
 		flex-basis: 30%;
+		overflow-y: scroll;
+		height: 900px;
+	}
+
+	section.about_me::-webkit-scrollbar{
+		display:none;
 	}
 
 	section.detail {
+		width:60vw;
 		flex-basis: 60%;
 		flex-grow: 1;
+		overflow-y: scroll;
+		height: 900px;
+	}
+
+	section.detail::-webkit-scrollbar{
+		display:none;
 	}
 
 }
