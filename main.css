@@ -4,6 +4,7 @@ body {
 	font-size: calc(0.75em + 1vw);
 	overflow-x: hidden;
 	width: 100%;
+	transition: 0.3s;
 }
 
 main {
@@ -50,6 +51,7 @@ button:hover {
 }
 
 /*header*/
+
 header {
 	width: 100vw;
 	display: flex;
@@ -72,6 +74,7 @@ header ul.list{
 header ul.list li {
 	float: left;
 	margin: 0 0.2em 0.5em 0.2em;
+	cursor: pointer;
 }
 
 header ul.list li:nth-child(1){
@@ -81,9 +84,10 @@ header ul.list li:nth-child(1){
 header ul.list li:nth-child(3){
 	width: 4em;
 	text-align: center;
+	cursor: pointer;
 }
 
-header ul.list li.page {
+#active{
 	color: coral;
 	font-weight: bold;
 }
@@ -196,14 +200,14 @@ section.detail .wrap_detail .row_direction{
 	flex-direction: row;
 }
 
-section.detail .wrap_detail .row_direction .wrap_content{
-	flex-basis: 50%;
-}
-
 section.detail .wrap_detail .wrap_content{
 	display: flex;
 	flex-direction: row;
 	padding: 0 1em 1em 1em;
+}
+
+section.detail .wrap_detail .row_direction .wrap_content{
+	flex-basis: 50%;
 }
 
 section.detail .wrap_detail .row_direction .wrap_content h5{
@@ -263,7 +267,7 @@ section.detail .wrap_detail .wrap_content .content ul.project li{
 	margin-left: 0.4em;
 }
 
-section.detail .wrap_detail .wrap_content .content a{
+section.detail .wrap_detail .wrap_content .content a.active_url{
 	font-size: 0.6em;
 }
 
@@ -286,6 +290,10 @@ section.detail .wrap_detail .wrap_content .content p.gray{
 
 	section.detail .wrap_detail .line{
 		width: 20em;
+	}
+
+	section.detail .wrap_detail{
+		font-size: 90%;
 	}
 	
 	section.detail .wrap_detail .row_direction{
