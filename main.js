@@ -1,19 +1,20 @@
+const introduce = document.getElementById("introduce");
+const project = document.getElementById("project");
+const intro_page = document.getElementById("introduce_page");
+const proj_page =  document.getElementById("project_page");
 
-const list = document.getElementsByClassName('list');
-console.log(list);
-
-
-function change(list){
-  console.log(list);
-
-  // const active = document.getElementById("active");
-  // const no_active = document.getElementById("no_active");
-
-  // active.setAttribute('id', 'no_active');
-  // no_active.setAttribute('id', 'active');
-  // console.log(active, no_active);
-
+function change(id) {
+  if (id === "project") {
+    introduce.removeAttribute("target");
+    project.setAttribute("target", "yes");
+    intro_page.style.display='none';
+    proj_page.style.display='flex';
+    proj_page.style.animation = 'show 3s'
+    
+  } else {
+    project.removeAttribute("target");
+    introduce.setAttribute("target", "yes");
+    intro_page.style.display='flex';
+    proj_page.style.display='none';
+  }
 }
-
-
-

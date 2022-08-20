@@ -24,13 +24,13 @@
 	<!--header-->
 	<header>
 			<ul class="list">
-				<li id="active" class="list-item">소개</li>
+				<li id="introduce" onclick="change(this.id)" target="yes" class="list-item">소개</li>
 				<li>&#129365;</li>
-				<li id="no_active" class="list-item">프로젝트</li>
+				<li id="project" onclick="change(this.id)" class="list-item">프로젝트</li>
 			</ul>
 	</header>
 	<!--main-->
-	<main>
+	<main id="introduce_page">
 			<section class="about_me">
 				<img src="marlinesquare.jpg" />
 				<div class="texts">
@@ -61,7 +61,7 @@
 							<button>GitHub</button>
 							<button>Java</button>
 							<button>MongoDB</button>
-							<button>Sass</button>
+							<button>Axios</button>
 							<button>Scss</button>
 							<button>Python</button>
 							<button>Amazon S3</button>
@@ -135,7 +135,7 @@
 				<div class="wrap_detail">
 					<h2>개인 프로젝트</h2>
 					<div class="wrap_content">
-						<h4>2022. 08~ <br />&nbsp;2022. 진행 중..</h4>
+						<h4>2022. 08~ <br />&nbsp;2022. 09</h4>
 						<div class="content">
 							<h3>TIL - 로그인 기반 웹 애플리케이션</h3>
 							<div class="btn">
@@ -143,11 +143,14 @@
 								<button>Styled-component</button>
 								<button>React Route</button>
 								<button>Firebase</button>
+								<button>Redux</button>
+								<button>Axios</button>
 							</div>
 							<p>TIL을 저장하고 보이는 화면에 로그인 기능을 넣어 사용자에 따른 목록을 보여주는 웹
 							<ul class="project">
 								<li>
-									Firebase Store, Storage를 적극 활용
+									Firebase Authentication으로 회원가입과 로그인 관리를 했습니다. 회원의 사진은
+									Firebase Storage에 사용자의 이미지를 업로드하여 얻은 URL경로를 사용했습니다. 
 								</li>
 								<li>
 									-
@@ -295,6 +298,9 @@
 					</div>
 				</div>
 			</section>
+	</main>
+	<main id="project_page">
+		<section class="all_project">안녕!</section>
 	</main>
 
 	<!--footer-->

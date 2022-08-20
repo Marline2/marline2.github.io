@@ -1,4 +1,11 @@
 /*common*/
+@keyframes show{
+	from{
+		opacity: 0;
+	}to{
+		opacity: 1;
+	}
+}
 body {
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: calc(0.75em + 1vw);
@@ -7,12 +14,21 @@ body {
 	transition: 0.3s;
 }
 
-main {
+main#introduce_page{
 	display: flex;
 	flex-direction: row;
 	margin: 1em 0;
 	flex-wrap: wrap;
 	padding-top: 6vh;
+}
+
+main#project_page{
+	display: none;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding-top: 6vh;
+	align-items: center;
+	
 }
 
 img {
@@ -87,10 +103,15 @@ header ul.list li:nth-child(3){
 	cursor: pointer;
 }
 
-#active{
+header ul.list .list-item[target="yes"]{
 	color: coral;
 	font-weight: bold;
 }
+
+/* #active{
+	color: coral;
+	font-weight: bold;
+} */
 
 /*section - about me*/
 section.about_me {
@@ -321,7 +342,7 @@ section.detail .wrap_detail .wrap_content .content p.gray{
 		width: 30em;
 	}
 	
-	main {
+	main#introduce_page {
 		margin: 1em auto;
 		max-width: 55em;
 		padding-top: 0;
