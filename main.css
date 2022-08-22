@@ -2,16 +2,20 @@
 @keyframes show{
 	from{
 		opacity: 0;
+		margin-top: -2em;
 	}to{
 		opacity: 1;
+		margin-top: -1em;
 	}
 }
+
 body {
 	font-family: 'Nanum Gothic', sans-serif;
 	font-size: calc(0.75em + 1vw);
 	overflow-x: hidden;
 	width: 100%;
 	transition: 0.3s;
+	cursor: default;
 }
 
 main#introduce_page{
@@ -22,22 +26,33 @@ main#introduce_page{
 	padding-top: 6vh;
 }
 
-main#project_page{
-	display: none;
-	flex-direction: column;
-	flex-wrap: wrap;
-	padding-top: 6vh;
-	align-items: center;
-	
-}
-
-img {
+main#introduce_page img {
 	width: 100%;
   height: auto;
 	border-radius: 50%;
 	margin: auto;
 	display: block;
 }
+
+main#project_page{
+	display: none;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: -1em;
+}
+
+main#project_page img{
+	border-radius: 1em 0 0 1em;
+	width:100%;
+	height: 100%;
+	margin:0;
+	display: block;
+	background-size: cover;
+  background-repeat: no-repeat;
+	text-align: center;
+}
+
 
 a {
 	text-decoration: none;
@@ -108,10 +123,6 @@ header ul.list .list-item[target="yes"]{
 	font-weight: bold;
 }
 
-/* #active{
-	color: coral;
-	font-weight: bold;
-} */
 
 /*section - about me*/
 section.about_me {
@@ -296,6 +307,80 @@ section.detail .wrap_detail .wrap_content .content p.gray{
 	color:gray;
 }
 
+section.all_project .form{
+	border-radius: 1em;
+	border: 1px solid rgb(192, 192, 192);
+	display: flex;
+	flex-direction: row;
+	max-width: 45em;
+	margin:1em;
+	height:15em;
+	box-shadow: 1px 1px 3px 1px rgb(209, 209, 209);
+	cursor: pointer;
+}
+
+section.all_project .form:hover{
+	animation: up 60ms;
+	margin-top:0.7em;
+}
+
+@keyframes up{
+	from{
+		margin-top: 1em;
+	}to{
+		margin-top: 0.7em;
+	}
+}
+
+section.all_project .form:hover .desc p{
+	color:black;
+}
+
+section.all_project .form .intro{
+	width:35%;
+	padding:1em 0.5em;
+}
+
+section.all_project .form .desc button{
+		background-color: rgb(12, 132, 136);
+		color:white;
+		font-size: 0.6em;
+		margin:0.5em 0;
+}
+
+section.all_project .form .desc{
+	padding:1em;
+	width:65%;
+}
+
+section.all_project .form .desc h2{
+	font-weight: bold;
+	font-size:1em;
+	margin: 0.5em 0;
+}
+
+section.all_project .form .desc p{
+	font-size:0.7em;
+	line-height: 1.2em;
+	color: gray;
+	margin:0.5em 0;
+}
+
+section.all_project .form .desc .btn{
+	margin: 1em 0;
+}
+
+section.all_project .form .desc .btn button{
+	border: none;
+	border-radius: 0.5em;
+	background-color: azure;
+	font-size:0.5em;
+	margin: 0.3em 0.2em;
+	color:black;
+}
+
+
+
 
 /*모바일*/
 @media (max-width: 600px){
@@ -326,6 +411,7 @@ section.detail .wrap_detail .wrap_content .content p.gray{
 	}
 }
 
+/*PC 전체화면*/
 @media (min-width: 1200px){
 	header {	
 		box-shadow: 0 0 0.1em 0 rgb(211, 211, 211);

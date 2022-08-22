@@ -9,7 +9,7 @@ function change(id) {
     project.setAttribute("target", "yes");
     intro_page.style.display='none';
     proj_page.style.display='flex';
-    proj_page.style.animation = 'show 3s'
+    proj_page.style.animation = 'show 1.5s'
     
   } else {
     project.removeAttribute("target");
