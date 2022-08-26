@@ -2,10 +2,8 @@
 @keyframes show{
 	from{
 		opacity: 0;
-		margin-top: -2em;
 	}to{
 		opacity: 1;
-		margin-top: -1em;
 	}
 }
 
@@ -14,7 +12,6 @@ body {
 	font-size: calc(0.75em + 1vw);
 	overflow-x: hidden;
 	width: 100%;
-	transition: 0.3s;
 	cursor: default;
 }
 
@@ -39,7 +36,7 @@ main#project_page{
 	flex-direction: column;
 	flex-wrap: wrap;
 	align-items: center;
-	margin-top: -1em;
+	margin: -1em 0 1em 0;
 }
 
 main#project_page img{
@@ -94,6 +91,7 @@ header {
 	top:0;
 	left: 0;
 	box-shadow: 0 0 0.5em 0 rgb(179, 178, 178);
+	z-index: 1;
 }
 
 header ul.list{
@@ -307,9 +305,13 @@ section.detail .wrap_detail .wrap_content .content p.gray{
 }
 
 section.all_project .content{
-	padding: 0.5em 1em 1em 1em;
+	padding: 0.5em 1em 0em 1em;
 	margin-top: 0.5em;
-	height:14em;
+	height:fit-content;
+}
+
+section.all_project {
+	padding-top: 10vh;
 }
 
 section.all_project .form{
@@ -318,7 +320,7 @@ section.all_project .form{
 	display: flex;
 	flex-direction: row;
 	max-width: 45em;
-	height:15em;
+	height:fit-content;
 	box-shadow: 1px 1px 3px 1px rgb(209, 209, 209);
 	cursor: pointer;
 }
@@ -422,6 +424,31 @@ section.all_project .form .desc .btn button{
 	section.detail .wrap_detail .row_direction .wrap_content{
 		flex-basis:auto;
 	}
+
+	main#project_page{
+		margin-top: 8vh;
+	}
+
+	section.all_project .form {
+		height:fit-content;
+	}
+
+	section.all_project .form .intro{
+		height:70%;
+		margin:auto;
+	}
+
+	section.all_project{
+		font-size: 70%;
+		padding-top: 0;
+	}
+
+	section.all_project .content{
+		height:fit-content;
+	}
+
+
+
 }
 
 /*PC 전체화면*/
@@ -467,6 +494,10 @@ section.all_project .form .desc .btn button{
 
 	section.detail::-webkit-scrollbar{
 		display:none;
+	}
+
+	section.all_project {
+		padding-top: 0;
 	}
 
 }

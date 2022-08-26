@@ -9,12 +9,13 @@ function change(id) {
     project.setAttribute("target", "yes");
     intro_page.style.display='none';
     proj_page.style.display='flex';
-    proj_page.style.animation = 'show 1.5s'
+    proj_page.style.animation = 'show 1s'
     
   } else {
     project.removeAttribute("target");
     introduce.setAttribute("target", "yes");
     intro_page.style.display='flex';
     proj_page.style.display='none';
+    intro_page.style.animation = 'show 1s'
   }
 }
