@@ -404,7 +404,8 @@ section.all_project .form .desc .btn button{
 	}
 
 	main#introduce_page img {
-		height: 15em;
+		max-width:300px;
+		max-height: 300px;
 	}
 
 	section.detail .wrap_detail .line{
