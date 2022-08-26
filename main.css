@@ -403,10 +403,8 @@ section.all_project .form .desc .btn button{
 		padding-top: 5vh;
 	}
 
-	img {
-		width: 15em;
-		height: 15em;
-		border-radius: 50%;
+	main#introduce_page img {
+		height: 70%;
 	}
 
 	section.detail .wrap_detail .line{
